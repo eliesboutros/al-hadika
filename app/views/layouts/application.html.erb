@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Al-Hadika Pest Control</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag "logo.png" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="bg-[#F5EED3]">
+    <!-- Top Bar -->
+    <div class="bg-gradient-to-r from-[#0F4D23] via-[#1E7A3A] to-[#0F4D23] text-white py-3 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2">
+          <div class="flex flex-wrap gap-3 sm:gap-6 justify-center">
+            <a href="tel:96170123456" class="flex items-center gap-2 hover:text-[#9BBF78] transition-all duration-300 hover:scale-105 group">
+              <svg class="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+              <span class="font-medium group-hover:font-semibold">+961 70 123 456</span>
+            </a>
+            <a href="mailto:info@alhadika.com" class="flex items-center gap-2 hover:text-[#9BBF78] transition-all duration-300 hover:scale-105 group">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+              <span class="font-medium group-hover:font-semibold">info@alhadika.com</span>
+            </a>
+          </div>
+          <div class="text-center relative">
+            <div class="absolute inset-0 bg-[#9BBF78] opacity-20 blur-lg rounded-full"></div>
+            <span class="relative font-bold text-[#CFE8B3] px-4 py-1 bg-[#0F4D23] bg-opacity-30 rounded-full border border-[#9BBF78] animate-pulse flex items-center gap-2">
+              <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+              Emergency 24/7 Service Available
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#1E7A3A]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <%= link_to root_path, class: "flex items-center gap-2 group" do %>
+              <%= image_tag "logo.png", alt: "Al-Hadika Logo", class: "w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-full border-2 border-[#1E7A3A] transition-transform duration-300 group-hover:scale-110 drop-shadow-lg" %>
+              <span class="text-2xl sm:text-3xl font-serif font-bold text-[#0F4D23] group-hover:text-[#1E7A3A] transition-colors duration-300 tracking-wide" style="font-family: 'Playfair Display', 'Georgia', serif;">Al-Hadika</span>
+            <% end %>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:block">
+            <div class="flex items-center space-x-1 xl:space-x-4">
+              <%= link_to "Home", root_path, class: "text-[#0F4D23] hover:text-[#1E7A3A] hover:bg-[#CFE8B3] px-3 py-2 rounded-lg text-base font-medium transition duration-200 #{current_page?(root_path) ? 'bg-[#9BBF78] text-white shadow-lg ring-2 ring-[#1E7A3A] ring-offset-2' : ''}" %>
+              <%= link_to "Services", services_path, class: "text-[#0F4D23] hover:text-[#1E7A3A] hover:bg-[#CFE8B3] px-3 py-2 rounded-lg text-base font-medium transition duration-200 #{current_page?(services_path) ? 'bg-[#9BBF78] text-white shadow-lg ring-2 ring-[#1E7A3A] ring-offset-2' : ''}" %>
+              <%= link_to "About", about_path, class: "text-[#0F4D23] hover:text-[#1E7A3A] hover:bg-[#CFE8B3] px-3 py-2 rounded-lg text-base font-medium transition duration-200 #{current_page?(about_path) ? 'bg-[#9BBF78] text-white shadow-lg ring-2 ring-[#1E7A3A] ring-offset-2' : ''}" %>
+              <%= link_to "Reviews", reviews_path, class: "text-[#0F4D23] hover:text-[#1E7A3A] hover:bg-[#CFE8B3] px-3 py-2 rounded-lg text-base font-medium transition duration-200 #{current_page?(reviews_path) ? 'bg-[#9BBF78] text-white shadow-lg ring-2 ring-[#1E7A3A] ring-offset-2' : ''}" %>
+              <%= link_to "Contact", contact_path, class: "text-[#0F4D23] hover:text-[#1E7A3A] hover:bg-[#CFE8B3] px-3 py-2 rounded-lg text-base font-medium transition duration-200 #{current_page?(contact_path) ? 'bg-[#9BBF78] text-white shadow-lg ring-2 ring-[#1E7A3A] ring-offset-2' : ''}" %>
+            </div>
+          </div>
+
+          <!-- CTA Button - Desktop -->
+          <div class="hidden lg:block">
+            <%= link_to "https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-[#1E7A3A] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0F4D23] transition duration-200 shadow-lg hover:shadow-xl" do %>
+              Get Free Inspection
+            <% end %>
+          </div>
+
+          <!-- Mobile: CTA + Menu Button -->
+          <div class="flex items-center gap-2 lg:hidden">
+            <%= link_to "https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-[#1E7A3A] text-white px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0F4D23] transition" do %>
+              Free Quote
+            <% end %>
+            <button type="button" class="text-[#0F4D23] hover:text-[#1E7A3A] focus:outline-none p-2" id="mobile-menu-button">
+              <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="lg:hidden hidden" id="mobile-menu">
+        <div class="px-4 pt-2 pb-4 space-y-2 bg-[#F5EED3] border-t-2 border-[#CFE8B3] shadow-lg">
+          <%= link_to "Home", root_path, class: "text-[#0F4D23] hover:bg-[#CFE8B3] hover:text-[#1E7A3A] block px-4 py-3 rounded-lg text-base font-medium transition #{current_page?(root_path) ? 'bg-[#9BBF78] text-white shadow-md' : ''}" %>
+          <%= link_to "Services", services_path, class: "text-[#0F4D23] hover:bg-[#CFE8B3] hover:text-[#1E7A3A] block px-4 py-3 rounded-lg text-base font-medium transition #{current_page?(services_path) ? 'bg-[#9BBF78] text-white shadow-md' : ''}" %>
+          <%= link_to "About", about_path, class: "text-[#0F4D23] hover:bg-[#CFE8B3] hover:text-[#1E7A3A] block px-4 py-3 rounded-lg text-base font-medium transition #{current_page?(about_path) ? 'bg-[#9BBF78] text-white shadow-md' : ''}" %>
+          <%= link_to "Reviews", reviews_path, class: "text-[#0F4D23] hover:bg-[#CFE8B3] hover:text-[#1E7A3A] block px-4 py-3 rounded-lg text-base font-medium transition #{current_page?(reviews_path) ? 'bg-[#9BBF78] text-white shadow-md' : ''}" %>
+          <%= link_to "Contact", contact_path, class: "text-[#0F4D23] hover:bg-[#CFE8B3] hover:text-[#1E7A3A] block px-4 py-3 rounded-lg text-base font-medium transition #{current_page?(contact_path) ? 'bg-[#9BBF78] text-white shadow-md' : ''}" %>
+          <%= link_to "https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-[#0F4D23] text-white block mx-0 mt-3 px-4 py-3 rounded-lg text-base font-semibold text-center hover:bg-[#1E7A3A] transition" do %>
+            WhatsApp Us Now
+          <% end %>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+      <%= yield %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0F4D23] text-white mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <%= image_tag "logo.png", alt: "Al-Hadika Logo", class: "w-8 h-8 object-cover rounded-full border-2 border-[#9BBF78]" %>
+              <h3 class="text-2xl font-serif font-bold text-[#9BBF78] tracking-wide" style="font-family: 'Playfair Display', 'Georgia', serif;">Al-Hadika</h3>
+            </div>
+            <p class="text-[#CFE8B3] leading-relaxed text-sm sm:text-base">Professional pest control and garden cleaning services you can trust.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#9BBF78]">Quick Links</h4>
+            <ul class="space-y-2 text-sm sm:text-base">
+              <li><%= link_to "Home", root_path, class: "text-[#CFE8B3] hover:text-[#9BBF78] transition duration-200" %></li>
+              <li><%= link_to "Services", services_path, class: "text-[#CFE8B3] hover:text-[#9BBF78] transition duration-200" %></li>
+              <li><%= link_to "About Us", about_path, class: "text-[#CFE8B3] hover:text-[#9BBF78] transition duration-200" %></li>
+              <li><%= link_to "Reviews", reviews_path, class: "text-[#CFE8B3] hover:text-[#9BBF78] transition duration-200" %></li>
+              <li><%= link_to "Contact", contact_path, class: "text-[#CFE8B3] hover:text-[#9BBF78] transition duration-200" %></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#9BBF78]">Our Services</h4>
+            <ul class="space-y-2 text-[#CFE8B3] text-sm sm:text-base">
+              <li>Pest Control</li>
+              <li>Garden Cleaning</li>
+              <li>Preventive Care</li>
+              <li>Emergency Services</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#9BBF78]">Contact Us</h4>
+            <ul class="space-y-3 text-[#CFE8B3] text-sm sm:text-base">
+              <li><a href="tel:96170123456" class="hover:text-[#9BBF78] transition">Phone: +961 70 123 456</a></li>
+              <li><a href="mailto:info@alhadika.com" class="hover:text-[#9BBF78] transition">Email: info@alhadika.com</a></li>
+              <li>Location: Lebanon</li>
+              <li class="pt-2">
+                <a href="https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection" target="_blank" class="inline-block bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#128C7E] transition duration-200 shadow-lg font-semibold text-sm">
+                  WhatsApp Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-[#1E7A3A] mt-8 pt-8 text-center text-[#CFE8B3] text-sm">
+          <p>&copy; <%= Time.current.year %> Al-Hadika Pest Control & Garden Services. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        if (button && menu) {
+          button.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
