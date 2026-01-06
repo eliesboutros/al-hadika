@@ -74,22 +74,22 @@ Rails.application.configure do
   # ============================================================
   # EMAIL CONFIGURATION FOR CONTACT FORM
   # ============================================================
-  
+
   # Set host for mailer links
   config.action_mailer.default_url_options = { host: "al-hadika.com" }
-  
+
   # Enable email delivery
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  
+
   # Outlook/Hotmail SMTP Configuration with timeout fixes
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp-mail.outlook.com',
+    address: "smtp-mail.outlook.com",
     port: 587,
-    domain: 'al-hadika.com',
-    user_name: 'Al-Hadika@outlook.com',
-    password: ENV.fetch('OUTLOOK_PASSWORD', ''),
+    domain: "al-hadika.com",
+    user_name: "Al-Hadika@outlook.com",
+    password: ENV.fetch("OUTLOOK_PASSWORD", ""),
     authentication: :login,
     enable_starttls_auto: true,
     open_timeout: 10,

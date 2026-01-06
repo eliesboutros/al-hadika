@@ -17,11 +17,11 @@ class PagesController < ApplicationController
   def create_contact
     # Get form parameters
     @contact_params = params.permit(:first_name, :last_name, :email, :phone, :service, :message)
-    
+
     # Send email
     begin
       ContactMailer.contact_email(@contact_params).deliver_now
-      
+
       redirect_to contact_path, notice: "Thank you! Your message has been sent successfully. We'll get back to you within 24 hours."
     rescue => e
       Rails.logger.error "Contact form error: #{e.message}"
@@ -29,4 +29,3 @@ class PagesController < ApplicationController
     end
   end
 end
-
