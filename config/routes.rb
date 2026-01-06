@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'services', to: 'pages#services'
   get 'reviews', to: 'pages#reviews'
   get 'contact', to: 'pages#contact'
+  post 'contact', to: 'pages#create_contact'
 end

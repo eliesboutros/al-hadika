@@ -1,31 +1,31 @@
 <!-- Hero Section with Slideshow -->
-<div id="hero-slideshow" class="relative overflow-hidden bg-gradient-to-r from-[#0F4D23] to-[#1E7A3A] text-white min-h-[500px] lg:min-h-[600px]">
+<div id="hero-slideshow" class="relative overflow-hidden bg-gradient-to-r from-[#0F4D23] to-[#1E7A3A] text-white h-[400px] sm:h-[500px] lg:h-[600px]">
   <!-- Slide 1: General Pest Control -->
-  <div class="hero-slide" data-slide="0">
+  <div class="hero-slide absolute inset-0" data-slide="0">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920&q=80');"></div>
     <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative h-full flex items-center justify-center px-4">
+      <div class="max-w-2xl text-center w-full">
+        <h1 class="text-xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight">
           Protect Your Home & Family
         </h1>
-        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-6 py-3 rounded-lg mb-8 border-2 border-[#9BBF78]">
-          <p class="text-xl sm:text-2xl text-white font-semibold">
-            Expert pest control services for a pest-free home
+        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg mb-4 sm:mb-8 border-2 border-[#9BBF78]">
+          <p class="text-xs sm:text-lg lg:text-2xl text-white font-semibold">
+            Expert pest control services
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <%= link_to "https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center inline-flex items-center justify-center gap-2" do %>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center max-w-xs sm:max-w-none mx-auto">
+          <%= link_to "https://wa.me/96179365375?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition inline-flex items-center justify-center gap-2" do %>
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
             </svg>
-            <span>Get Free Inspection</span>
+            <span>WhatsApp Us</span>
           <% end %>
-          <%= link_to "tel:96170123456", class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center inline-flex items-center justify-center gap-2" do %>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <%= link_to "tel:+96179365375", class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition inline-flex items-center justify-center gap-2" do %>
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
             </svg>
-            <span>Call: +961 70 123 456</span>
+            <span>Call Us</span>
           <% end %>
         </div>
       </div>
@@ -33,22 +33,22 @@
   </div>
 
   <!-- Slide 2: Bed Bug Treatment -->
-  <div class="hero-slide hidden" data-slide="1">
+  <div class="hero-slide hidden absolute inset-0" data-slide="1">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=80');"></div>
     <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative h-full flex items-center justify-center px-4">
+      <div class="max-w-2xl text-center w-full">
+        <h1 class="text-xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight">
           Eliminate Bed Bugs Fast
         </h1>
-        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-6 py-3 rounded-lg mb-8 border-2 border-[#9BBF78]">
-          <p class="text-xl sm:text-2xl text-white font-semibold">
-            Same-day treatment • 100% satisfaction guaranteed
+        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg mb-4 sm:mb-8 border-2 border-[#9BBF78]">
+          <p class="text-xs sm:text-lg lg:text-2xl text-white font-semibold">
+            Same-day treatment available
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center" do %>
-            Learn More About Bed Bug Treatment
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center max-w-xs sm:max-w-none mx-auto">
+          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition" do %>
+            Learn More
           <% end %>
         </div>
       </div>
@@ -56,22 +56,22 @@
   </div>
 
   <!-- Slide 3: Restaurant Services -->
-  <div class="hero-slide hidden" data-slide="2">
+  <div class="hero-slide hidden absolute inset-0" data-slide="2">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80');"></div>
     <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative h-full flex items-center justify-center px-4">
+      <div class="max-w-2xl text-center w-full">
+        <h1 class="text-xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight">
           Keep Your Restaurant Pest-Free
         </h1>
-        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-6 py-3 rounded-lg mb-8 border-2 border-[#9BBF78]">
-          <p class="text-xl sm:text-2xl text-white font-semibold">
-            Commercial pest control for restaurants & cafes
+        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg mb-4 sm:mb-8 border-2 border-[#9BBF78]">
+          <p class="text-xs sm:text-lg lg:text-2xl text-white font-semibold">
+            Commercial pest control
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center" do %>
-            Restaurant Services
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center max-w-xs sm:max-w-none mx-auto">
+          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition" do %>
+            Learn More
           <% end %>
         </div>
       </div>
@@ -79,22 +79,22 @@
   </div>
 
   <!-- Slide 4: Hotel Services -->
-  <div class="hero-slide hidden" data-slide="3">
+  <div class="hero-slide hidden absolute inset-0" data-slide="3">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80');"></div>
     <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative h-full flex items-center justify-center px-4">
+      <div class="max-w-2xl text-center w-full">
+        <h1 class="text-xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight">
           Professional Hotel Pest Control
         </h1>
-        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-6 py-3 rounded-lg mb-8 border-2 border-[#9BBF78]">
-          <p class="text-xl sm:text-2xl text-white font-semibold">
-            Discreet service • Protect your reputation
+        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg mb-4 sm:mb-8 border-2 border-[#9BBF78]">
+          <p class="text-xs sm:text-lg lg:text-2xl text-white font-semibold">
+            Discreet & professional service
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center" do %>
-            Hotel Solutions
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center max-w-xs sm:max-w-none mx-auto">
+          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition" do %>
+            Learn More
           <% end %>
         </div>
       </div>
@@ -102,22 +102,22 @@
   </div>
 
   <!-- Slide 5: Garden Protection -->
-  <div class="hero-slide hidden" data-slide="4">
+  <div class="hero-slide hidden absolute inset-0" data-slide="4">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80');"></div>
     <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <div class="relative h-full flex items-center justify-center px-4">
+      <div class="max-w-2xl text-center w-full">
+        <h1 class="text-xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight">
           Protect Your Garden & Landscape
         </h1>
-        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-6 py-3 rounded-lg mb-8 border-2 border-[#9BBF78]">
-          <p class="text-xl sm:text-2xl text-white font-semibold">
-            Eco-friendly solutions for outdoor spaces
+        <div class="inline-block bg-[#0F4D23]/90 backdrop-blur-sm px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg mb-4 sm:mb-8 border-2 border-[#9BBF78]">
+          <p class="text-xs sm:text-lg lg:text-2xl text-white font-semibold">
+            Eco-friendly solutions
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition text-center" do %>
-            Garden Services
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center max-w-xs sm:max-w-none mx-auto">
+          <%= link_to services_path, class: "bg-white text-[#0F4D23] px-5 py-2.5 sm:px-8 sm:py-4 rounded text-sm sm:text-lg font-bold hover:bg-[#CFE8B3] transition" do %>
+            Learn More
           <% end %>
         </div>
       </div>
@@ -125,26 +125,26 @@
   </div>
 
   <!-- Previous Arrow -->
-  <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition backdrop-blur-sm">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <button id="prev-slide" class="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-1.5 sm:p-3 rounded-full transition backdrop-blur-sm cursor-pointer">
+    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
     </svg>
   </button>
 
   <!-- Next Arrow -->
-  <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition backdrop-blur-sm">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <button id="next-slide" class="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-1.5 sm:p-3 rounded-full transition backdrop-blur-sm cursor-pointer">
+    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
     </svg>
   </button>
 
   <!-- Slide Navigation Dots -->
-  <div class="absolute bottom-8 left-0 right-0 z-20 flex justify-center gap-3">
-    <button class="slide-dot w-3 h-3 rounded-full bg-white transition" data-slide="0"></button>
-    <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 transition" data-slide="1"></button>
-    <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 transition" data-slide="2"></button>
-    <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 transition" data-slide="3"></button>
-    <button class="slide-dot w-3 h-3 rounded-full bg-white opacity-50 transition" data-slide="4"></button>
+  <div class="absolute bottom-4 sm:bottom-8 left-0 right-0 z-20 flex justify-center gap-1.5 sm:gap-3">
+    <button class="slide-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white transition" data-slide="0"></button>
+    <button class="slide-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50 transition" data-slide="1"></button>
+    <button class="slide-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50 transition" data-slide="2"></button>
+    <button class="slide-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50 transition" data-slide="3"></button>
+    <button class="slide-dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50 transition" data-slide="4"></button>
   </div>
 
   <!-- Wave divider -->
@@ -194,7 +194,7 @@
 
     function startSlideshow() {
       if (slideInterval) clearInterval(slideInterval);
-      slideInterval = setInterval(nextSlide, 3000);
+      slideInterval = setInterval(nextSlide, 4000); // Changed from 3000 to 4000 (4 seconds)
     }
 
     function stopSlideshow() {
@@ -240,12 +240,181 @@
   });
 </script>
 
+<!-- Service Modal -->
+<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div class="sticky top-0 bg-[#0F4D23] text-white p-6 rounded-t-xl flex justify-between items-center">
+      <h3 id="modalTitle" class="text-2xl font-bold"></h3>
+      <button onclick="closeModal()" class="text-white hover:text-[#CFE8B3] transition cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="p-6">
+      <div id="modalImage" class="w-full h-64 bg-cover bg-center rounded-lg mb-6"></div>
+      <div id="modalContent" class="text-[#1E7A3A] space-y-4"></div>
+      <div class="mt-6 pt-6 border-t border-[#CFE8B3]">
+        <h4 class="text-xl font-bold text-[#0F4D23] mb-4">What Makes Us Special</h4>
+        <div id="modalSpecial" class="space-y-2"></div>
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a id="modalWhatsApp" href="#" target="_blank" class="flex-1 bg-[#25D366] text-white text-center px-6 py-4 rounded-lg font-bold hover:bg-[#128C7E] transition inline-flex items-center justify-center gap-2 shadow-lg">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          <span>Request More Information</span>
+        </a>
+        <button onclick="closeModal()" class="flex-1 sm:flex-none bg-gray-400 text-white text-center px-6 py-4 rounded-lg font-bold hover:bg-gray-500 transition cursor-pointer">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const serviceData = {
+    'general-pests': {
+      title: 'General Pest Control',
+      image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80',
+      description: 'Comprehensive protection against common household pests including ants, roaches, spiders, silverfish, and more. Our proven treatment methods create a protective barrier around your home.',
+      whatToLookFor: [
+        'Visible pest activity or droppings',
+        'Unusual odors or sounds in walls',
+        'Damage to wood, fabric, or food packaging',
+        'Signs of nesting or egg cases'
+      ],
+      special: [
+        'Eco-friendly treatment options safe for children and pets',
+        'Year-round protection plans with quarterly visits',
+        'Same-day emergency service available',
+        'Free re-treatment if pests return between visits'
+      ],
+      whatsappMessage: 'Hello! I would like to inquire about your General Pest Control services. Could you please provide me with more information about pricing and scheduling?'
+    },
+    'bed-bugs': {
+      title: 'Bed Bug Treatment',
+      image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80',
+      description: 'Fast and thorough bed bug elimination using advanced heat treatment and EPA-approved chemical solutions. We understand the urgency and stress of bed bug infestations.',
+      whatToLookFor: [
+        'Small blood stains on sheets or pillowcases',
+        'Tiny dark spots (bed bug excrement) on bedding',
+        'Itchy bite marks, often in a line or cluster',
+        'Musty odor in the bedroom'
+      ],
+      special: [
+        'Same-day emergency treatment available',
+        'Heat treatment kills all life stages instantly',
+        'Follow-up inspection included',
+        '30-day satisfaction guarantee'
+      ],
+      whatsappMessage: 'Hello! I need urgent help with bed bugs. Could you please provide information about your bed bug treatment services and availability for an inspection?'
+    },
+    'restaurant': {
+      title: 'Restaurant & Cafe Services',
+      image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      description: 'Specialized commercial pest control designed for food service establishments. We help you maintain health code compliance and protect your business reputation.',
+      whatToLookFor: [
+        'Any signs of rodents or insects in kitchen areas',
+        'Failed health inspections due to pest issues',
+        'Customer complaints about pest sightings',
+        'Damage to stored food products'
+      ],
+      special: [
+        'Discreet service during off-hours',
+        'Monthly maintenance plans available',
+        'Health compliance documentation provided',
+        'Trained in food safety regulations'
+      ],
+      whatsappMessage: 'Hello! I am interested in your restaurant pest control services. Could you provide details about your commercial service packages and scheduling options?'
+    },
+    'hotel': {
+      title: 'Hotel Pest Control',
+      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+      description: 'Professional, discreet pest control services for hotels and hospitality businesses. Protect your guests and your reputation with our specialized hotel solutions.',
+      whatToLookFor: [
+        'Guest complaints about pests in rooms',
+        'Online reviews mentioning pest issues',
+        'Signs of bed bugs in guest rooms',
+        'Pest activity in common areas or kitchens'
+      ],
+      special: [
+        'Discreet service that won\'t disturb guests',
+        'Emergency response for guest complaints',
+        'Preventive programs to maintain pest-free status',
+        'Documentation for quality standards compliance'
+      ],
+      whatsappMessage: 'Hello! I would like to discuss pest control solutions for our hotel. Could you provide information about your hospitality industry services and preventive programs?'
+    },
+    'garden': {
+      title: 'Garden & Landscape Protection',
+      image: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80',
+      description: 'Eco-friendly pest control solutions for your outdoor spaces. Protect your plants, trees, and lawn from destructive pests while maintaining environmental balance.',
+      whatToLookFor: [
+        'Damaged or yellowing plants and leaves',
+        'Visible insects on plants or in soil',
+        'Dead patches in your lawn',
+        'Chewed leaves or stems'
+      ],
+      special: [
+        'Organic and eco-friendly treatment options',
+        'Customized treatment plans for your landscape',
+        'Seasonal protection programs',
+        'Safe for beneficial insects and pollinators'
+      ],
+      whatsappMessage: 'Hello! I need help protecting my garden from pests. Could you provide information about your garden pest control services and eco-friendly options?'
+    }
+  };
+
+  function openModal(serviceKey) {
+    const service = serviceData[serviceKey];
+    if (!service) return;
+
+    document.getElementById('modalTitle').textContent = service.title;
+    document.getElementById('modalImage').style.backgroundImage = `url('${service.image}')`;
+    
+    let contentHTML = `<p class="text-lg leading-relaxed">${service.description}</p>`;
+    contentHTML += '<div class="mt-6"><h4 class="text-lg font-bold text-[#0F4D23] mb-3">What to Look For:</h4><ul class="space-y-2">';
+    service.whatToLookFor.forEach(item => {
+      contentHTML += `<li class="flex items-start"><svg class="w-5 h-5 text-[#1E7A3A] mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>${item}</span></li>`;
+    });
+    contentHTML += '</ul></div>';
+    
+    document.getElementById('modalContent').innerHTML = contentHTML;
+    
+    let specialHTML = '';
+    service.special.forEach(item => {
+      specialHTML += `<div class="flex items-start"><svg class="w-5 h-5 text-[#1E7A3A] mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span class="text-[#0F4D23]">${item}</span></div>`;
+    });
+    document.getElementById('modalSpecial').innerHTML = specialHTML;
+    
+    const whatsappLink = `https://wa.me/96179365375?text=${encodeURIComponent(service.whatsappMessage)}`;
+    document.getElementById('modalWhatsApp').href = whatsappLink;
+    
+    document.getElementById('serviceModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('serviceModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close modal when clicking outside
+  document.getElementById('serviceModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeModal();
+    }
+  });
+</script>
+
 <!-- Quick Service Selector -->
 <div class="bg-white py-12 shadow-md">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-[#0F4D23] text-center mb-8">What can we help you with?</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-      <button class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
+      <button onclick="openModal('general-pests')" class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
         <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0F4D23] via-[#0F4D23]/70 to-transparent opacity-90 group-hover:opacity-75 transition-opacity"></div>
         </div>
@@ -259,7 +428,7 @@
         </div>
       </button>
 
-      <button class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
+      <button onclick="openModal('bed-bugs')" class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
         <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0F4D23] via-[#0F4D23]/70 to-transparent opacity-90 group-hover:opacity-75 transition-opacity"></div>
         </div>
@@ -273,7 +442,7 @@
         </div>
       </button>
 
-      <button class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
+      <button onclick="openModal('restaurant')" class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
         <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0F4D23] via-[#0F4D23]/70 to-transparent opacity-90 group-hover:opacity-75 transition-opacity"></div>
         </div>
@@ -287,7 +456,7 @@
         </div>
       </button>
 
-      <button class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
+      <button onclick="openModal('hotel')" class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
         <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0F4D23] via-[#0F4D23]/70 to-transparent opacity-90 group-hover:opacity-75 transition-opacity"></div>
         </div>
@@ -301,7 +470,7 @@
         </div>
       </button>
 
-      <button class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
+      <button onclick="openModal('garden')" class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:scale-105">
         <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558904541-efa843a96f01?w=600&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0F4D23] via-[#0F4D23]/70 to-transparent opacity-90 group-hover:opacity-75 transition-opacity"></div>
         </div>
@@ -328,7 +497,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       <!-- Service 1 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3]">
+      <div onclick="openModal('general-pests')" class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3] cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           <div class="absolute bottom-4 left-4">
@@ -357,14 +526,14 @@
               <span class="text-[#0F4D23]">Same-day service available</span>
             </li>
           </ul>
-          <%= link_to services_path, class: "block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer" do %>
+          <div class="block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer">
             Learn More
-          <% end %>
+          </div>
         </div>
       </div>
 
       <!-- Service 2 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3]">
+      <div onclick="openModal('restaurant')" class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3] cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           <div class="absolute bottom-4 left-4">
@@ -393,14 +562,14 @@
               <span class="text-[#0F4D23]">Health compliance support</span>
             </li>
           </ul>
-          <%= link_to services_path, class: "block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer" do %>
+          <div class="block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer">
             Learn More
-          <% end %>
+          </div>
         </div>
       </div>
 
       <!-- Service 3 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3]">
+      <div onclick="openModal('bed-bugs')" class="bg-white rounded-lg overflow-hidden shadow-md border border-[#CFE8B3] cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80');">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           <div class="absolute bottom-4 left-4">
@@ -429,9 +598,9 @@
               <span class="text-[#0F4D23]">30-day satisfaction guarantee</span>
             </li>
           </ul>
-          <%= link_to services_path, class: "block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer" do %>
+          <div class="block w-full bg-[#1E7A3A] text-white text-center px-6 py-3 rounded font-bold hover:bg-[#0F4D23] transition cursor-pointer">
             Learn More
-          <% end %>
+          </div>
         </div>
       </div>
     </div>
@@ -501,7 +670,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
       <div>
-        <div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2">15+</div>
+        <div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2">40+</div>
         <div class="text-[#CFE8B3]">Years of Experience</div>
       </div>
       <div>
@@ -558,7 +727,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Review 1 -->
-      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition">
+      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition cursor-pointer">
         <div class="flex items-center gap-3 mb-4">
           <div class="w-12 h-12 bg-[#1E7A3A] rounded-full flex items-center justify-center text-white font-bold text-lg">
             S
@@ -575,7 +744,7 @@
       </div>
 
       <!-- Review 2 -->
-      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition">
+      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition cursor-pointer">
         <div class="flex items-center gap-3 mb-4">
           <div class="w-12 h-12 bg-[#1E7A3A] rounded-full flex items-center justify-center text-white font-bold text-lg">
             M
@@ -592,7 +761,7 @@
       </div>
 
       <!-- Review 3 -->
-      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition">
+      <div class="bg-white border-2 border-[#CFE8B3] rounded-lg p-6 hover:shadow-lg transition cursor-pointer">
         <div class="flex items-center gap-3 mb-4">
           <div class="w-12 h-12 bg-[#1E7A3A] rounded-full flex items-center justify-center text-white font-bold text-lg">
             L
@@ -610,7 +779,7 @@
     </div>
 
     <div class="text-center mt-8">
-      <a href="https://www.google.com/search?q=al-hadika+pest+control" target="_blank" class="inline-block text-[#1E7A3A] font-bold hover:text-[#0F4D23] transition">
+      <a href="https://www.google.com/search?q=al-hadika+pest+control" target="_blank" class="inline-block text-[#1E7A3A] font-bold hover:text-[#0F4D23] transition cursor-pointer">
         See all reviews on Google →
       </a>
     </div>
@@ -623,13 +792,13 @@
     <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready for a Pest-Free Home?</h2>
     <p class="text-xl mb-8 text-[#CFE8B3]">Get your free inspection today - no obligation</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <%= link_to "https://wa.me/96170123456?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition inline-flex items-center justify-center gap-2" do %>
+      <%= link_to "https://wa.me/96179365375?text=Hello%2C%20I%20would%20like%20a%20free%20inspection", target: "_blank", class: "bg-white text-[#0F4D23] px-8 py-4 rounded text-lg font-bold hover:bg-[#CFE8B3] transition inline-flex items-center justify-center gap-2" do %>
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
         <span>Schedule Free Inspection</span>
       <% end %>
-      <%= link_to "tel:96170123456", class: "bg-transparent border-2 border-white text-white px-8 py-4 rounded text-lg font-bold hover:bg-white hover:text-[#0F4D23] transition inline-flex items-center justify-center gap-2" do %>
+      <%= link_to "tel:+96179365375", class: "bg-transparent border-2 border-white text-white px-8 py-4 rounded text-lg font-bold hover:bg-white hover:text-[#0F4D23] transition inline-flex items-center justify-center gap-2" do %>
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
         </svg>

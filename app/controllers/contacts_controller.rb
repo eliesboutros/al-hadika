@@ -1,20 +1,9 @@
-class PagesController < ApplicationController
-  def home
+class ContactsController < ApplicationController
+  def new
+    # Display the contact form (contact.html.erb)
   end
 
-  def about
-  end
-
-  def services
-  end
-
-  def reviews
-  end
-
-  def contact
-  end
-
-  def create_contact
+  def create
     # Get form parameters
     @contact_params = params.permit(:first_name, :last_name, :email, :phone, :service, :message)
     
@@ -29,4 +18,3 @@ class PagesController < ApplicationController
     end
   end
 end
-
