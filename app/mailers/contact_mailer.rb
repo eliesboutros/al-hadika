@@ -10,7 +10,7 @@ class ContactMailer < ApplicationMailer
     @message = contact_params[:message]
 
     mail(
-      to: "Al-Hadika@outlook.com",
+      to: "al.hadika.lb@gmail.com",
       subject: "New Contact Form Submission - #{@service}",
       reply_to: @email
     )
