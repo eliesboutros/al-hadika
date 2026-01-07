@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  default from: "noreply@alhadika.com" # This will be the "from" address
+  default from: "contact@al-hadika.com" # This will be the "from" address
 
   def contact_email(contact_params)
     @first_name = contact_params[:first_name]
