@@ -85,11 +85,11 @@ Rails.application.configure do
   # Outlook/Hotmail SMTP Configuration with timeout fixes
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.resend.com",
     port: 587,
     domain: "al-hadika.com",
-    user_name: "Al-Hadika@gmail.com",
-    password: ENV.fetch("GMAIL_PASSWORD", ""),
+    user_name: "resend",
+    password: ENV.fetch("RESEND_API_KEY", ""),
     authentication: :plain,
     enable_starttls_auto: true,
   }
