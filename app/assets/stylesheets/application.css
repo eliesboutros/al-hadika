@@ -1,10 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+
+.spray-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="12" y="4" width="8" height="12" fill="%230F4D23" rx="2"/><rect x="14" y="16" width="4" height="8" fill="%231E7A3A"/><circle cx="16" cy="26" r="2" fill="%239BBF78"/><circle cx="12" cy="24" r="1.5" fill="%239BBF78" opacity="0.7"/><circle cx="20" cy="24" r="1.5" fill="%239BBF78" opacity="0.7"/></svg>'), pointer;
+}
