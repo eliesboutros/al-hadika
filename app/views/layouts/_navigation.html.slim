@@ -1,0 +1,43 @@
+nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#1E7A3A]"
+  div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    div class="flex justify-between items-center h-16 sm:h-20"
+      / Logo
+      div class="flex-shrink-0"
+        = link_to root_path, class: "flex items-center gap-2 group" do
+          = image_tag "logo.png", alt: "Al-Hadika Logo", class: "w-12 h-12 sm:w-16 sm:h-16 object-contain transition-transform duration-300 group-hover:scale-110 drop-shadow-lg"
+          div class="flex flex-col items-center"
+            span class="text-2xl sm:text-3xl font-serif font-bold text-[#0F4D23] group-hover:text-[#1E7A3A] transition-colors duration-300 tracking-wide" style="font-family: 'Playfair Display', 'Georgia', serif;" Al-Hadika
+            span class="text-xl sm:text-2xl font-serif font-bold text-[#1E7A3A] group-hover:text-[#0F4D23] transition-colors duration-300 -mt-1" style="font-family: 'Noto Naskh Arabic', 'Traditional Arabic', 'Arabic Typesetting', serif;" dir="rtl" الحديقة
+
+      / Desktop Navigation
+      div class="hidden lg:block"
+        div class="flex items-center space-x-1 xl:space-x-4"
+          = link_to "Home", root_path, class: nav_link_class(root_path)
+          = link_to "Services", services_path, class: nav_link_class(services_path)
+          = link_to "About", about_path, class: nav_link_class(about_path)
+          = link_to "Reviews", reviews_path, class: nav_link_class(reviews_path)
+          = link_to "Contact", contact_path, class: nav_link_class(contact_path)
+
+      / CTA Button - Desktop
+      div class="hidden lg:block"
+        = link_to whatsapp_link(:general), target: "_blank", rel: "noopener", class: "bg-[#1E7A3A] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0F4D23] transition duration-200 shadow-lg hover:shadow-xl" do
+          | Get Free Inspection
+
+      / Mobile: CTA + Menu Button
+      div class="flex items-center gap-2 lg:hidden"
+        = link_to whatsapp_link(:general), target: "_blank", rel: "noopener", class: "bg-[#1E7A3A] text-white px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0F4D23] transition" do
+          | Free Quote
+        button type="button" class="text-[#0F4D23] hover:text-[#1E7A3A] focus:outline-none p-2 cursor-pointer" id="mobile-menu-button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');"
+          svg class="h-7 w-7 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"
+
+  / Mobile menu
+  div class="lg:hidden hidden" id="mobile-menu"
+    div class="px-4 pt-2 pb-4 space-y-2 bg-[#F5EED3] border-t-2 border-[#CFE8B3] shadow-lg"
+      = link_to "Home", root_path, class: mobile_nav_link_class(root_path)
+      = link_to "Services", services_path, class: mobile_nav_link_class(services_path)
+      = link_to "About", about_path, class: mobile_nav_link_class(about_path)
+      = link_to "Reviews", reviews_path, class: mobile_nav_link_class(reviews_path)
+      = link_to "Contact", contact_path, class: mobile_nav_link_class(contact_path)
+      = link_to whatsapp_link(:general), target: "_blank", rel: "noopener", class: "bg-[#0F4D23] text-white block mx-0 mt-3 px-4 py-3 rounded-lg text-base font-semibold text-center hover:bg-[#1E7A3A] transition" do
+        | WhatsApp Us Now

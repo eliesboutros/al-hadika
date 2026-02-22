@@ -64,3 +64,6 @@ group :test do
   gem "selenium-webdriver"
 end
 gem "letter_opener", group: :development
+
+
+gem 'slim-rails'
