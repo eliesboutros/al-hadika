@@ -43,7 +43,7 @@ Al-Hadika is a comprehensive pest control and garden services company based in B
 - **Bilingual Branding** - English (Al-Hadika) and Arabic (الحديقة)
 - **Live Business Status** - Automatically shows if business is Open/Closed based on Lebanon timezone
 - **Interactive Service Modals** - Click any service to see detailed information
-- **Contact Form** - Sends emails directly to business email (Al-Hadika@outlook.com)
+- **Contact Form** - Sends emails directly to business email (support@al-hadika.com)
 - **WhatsApp Integration** - Direct links to start WhatsApp conversations
 - **Google Maps** - Integrated map showing business location in Batroun
 
@@ -182,7 +182,7 @@ OUTLOOK_PASSWORD=your_outlook_password_here
 
 ## 📧 Contact Form Setup
 
-The contact form is fully functional and sends emails to `Al-Hadika@outlook.com`.
+The contact form is fully functional and sends emails to `support@al-hadika.com`.
 
 ### Files Structure
 ```
@@ -277,7 +277,7 @@ Emails will open in your browser instead of being sent.
 ## 📱 Contact Information
 
 - **Phone:** +961 79 365 375
-- **Email:** Al-Hadika@outlook.com
+- **Email:** support@al-hadika.com
 - **WhatsApp:** +961 79 365 375
 - **Location:** Sea Side Road, Batroun, Lebanon
 - **Coordinates:** 34.248132, 35.662430
@@ -378,7 +378,7 @@ This project is proprietary and confidential. All rights reserved by Al-Hadika P
 
 - **Development:** Built with care for Al-Hadika
 - **Design:** Custom Tailwind CSS design
-- **Contact:** For inquiries, email Al-Hadika@outlook.com
+- **Contact:** For inquiries, email support@al-hadika.com
 
 ---
 

@@ -1,11 +1,13 @@
+cat > app/views/pages/home/_stats_banner.html.slim << 'EOF'
 div class="bg-[#0F4D23] py-12"
   div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
     div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white"
       div
-        div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2" 40+
+        div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2"
+          = "#{Date.today.year - 1986}+"
         div class="text-[#CFE8B3]" Years of Experience
       div
-        div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2" 500+
+        div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2" 1,000+
         div class="text-[#CFE8B3]" Happy Customers
       div
         div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2" 24/7
@@ -13,3 +15,4 @@ div class="bg-[#0F4D23] py-12"
       div
         div class="text-4xl lg:text-5xl font-bold text-[#9BBF78] mb-2" 100%
         div class="text-[#CFE8B3]" Satisfaction Rate
+EOF
