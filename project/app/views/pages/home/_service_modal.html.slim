@@ -1,0 +1,90 @@
+- wa = { generalPest: whatsapp_link(:general_pest), termite: whatsapp_link(:termite), bedBug: whatsapp_link(:bed_bug), rodent: whatsapp_link(:rodent), outdoor: whatsapp_link(:outdoor), restaurant: whatsapp_link(:restaurant), hotel: whatsapp_link(:hotel), commercial: whatsapp_link(:commercial), fumigation: whatsapp_link(:fumigation), preConstruction: whatsapp_link(:pre_construction), preventive: whatsapp_link(:preventive) }
+
+div id="serviceModal" onclick="if(event.target === this) closeModal()" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4 transition-opacity duration-300"
+  div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300"
+    div class="sticky top-0 bg-gradient-to-r from-[#0F4D23] to-[#1E7A3A] text-white p-6 rounded-t-2xl"
+      div class="flex items-start justify-between"
+        h3 id="modalTitle" class="text-2xl font-bold leading-tight pr-4"
+        button onclick="closeModal()" class="text-white hover:text-[#CFE8B3] transition cursor-pointer flex-shrink-0"
+          svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"
+
+    div class="p-8"
+      div id="modalIntro" class="text-[#1E7A3A] text-lg leading-relaxed mb-8"
+
+      div class="mb-8"
+        h4 class="text-xl font-bold text-[#0F4D23] mb-4 flex items-center gap-2"
+          svg class="w-6 h-6 text-[#1E7A3A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+          | What We Offer
+        div id="modalDetails" class="space-y-3"
+
+      div class="mb-8 bg-[#F5EED3] rounded-xl p-6"
+        h4 class="text-xl font-bold text-[#0F4D23] mb-4 flex items-center gap-2"
+          svg class="w-6 h-6 text-[#1E7A3A]" fill="currentColor" viewBox="0 0 20 20"
+            path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+          | What Makes Us Special
+        div id="modalSpecial" class="space-y-3"
+
+      div class="mb-8 bg-[#CFE8B3]/30 border border-[#CFE8B3] rounded-lg p-4"
+        div class="flex items-start gap-3"
+          svg class="w-5 h-5 text-[#0F4D23] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"
+            path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"
+          p class="text-sm text-[#0F4D23]"
+            span class="font-semibold" Follow-up plans available:
+            |  We offer maintenance programs to keep your property protected year-round.
+
+      div class="flex flex-col sm:flex-row gap-3"
+        a id="modalWhatsApp" href="#" target="_blank" class="flex-1 bg-[#25D366] text-white text-center px-6 py-4 rounded-xl font-bold hover:bg-[#128C7E] transition-all inline-flex items-center justify-center gap-2 shadow-lg"
+          svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+            path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          span Get Quote via WhatsApp
+        button onclick="closeModal()" class="sm:w-auto px-6 py-4 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 transition cursor-pointer" Close
+
+javascript:
+  const waUrls = {
+    generalPest:     "#{wa[:generalPest]}",
+    termite:         "#{wa[:termite]}",
+    bedBug:          "#{wa[:bedBug]}",
+    rodent:          "#{wa[:rodent]}",
+    outdoor:         "#{wa[:outdoor]}",
+    restaurant:      "#{wa[:restaurant]}",
+    hotel:           "#{wa[:hotel]}",
+    commercial:      "#{wa[:commercial]}",
+    fumigation:      "#{wa[:fumigation]}",
+    preConstruction: "#{wa[:preConstruction]}",
+    preventive:      "#{wa[:preventive]}"
+  };
+
+  const serviceData = {
+    generalPest:     { title: "General Pest Control",       intro: "Comprehensive protection for your home against common household pests. Our treatments ensure year-round peace of mind.",                                               details: ["Coverage for ants, cockroaches, spiders, silverfish, and more", "Quarterly treatment plans available", "Interior and exterior barrier protection", "Eco-friendly treatment options", "Thorough inspection of problem areas"],    special: ["100% satisfaction guarantee or we re-treat at no cost", "Safe for children and pets", "Same-day emergency service available"] },
+    termite:         { title: "Termite Control",            intro: "Protect your biggest investment from devastating termite damage with our comprehensive inspection and treatment program.",                                               details: ["Free professional termite inspection", "Advanced liquid termiticide treatments", "Termite baiting and monitoring systems", "Wood treatment consultation", "Annual inspections for continued protection"],                      special: ["Early detection saves thousands in repair costs", "Certified termite specialists"] },
+    bedBug:          { title: "Bed Bug Treatment",          intro: "Fast, effective elimination of bed bug infestations. We understand the urgency and handle every case with discretion.",                                                 details: ["Heat treatments that kill all life stages instantly", "Steam treatment options available", "Comprehensive inspection to determine infestation extent", "Customized treatment plan based on severity"],                      special: ["Same-day emergency service available", "Discreet service", "Treatment effectiveness guaranteed", "Follow-up inspections included"] },
+    rodent:          { title: "Rodent Control",             intro: "Complete rodent elimination and prevention. We identify and seal entry points to prevent future infestations.",                                                         details: ["Thorough property inspection", "Entry point identification and exclusion", "Strategic trap placement", "Tamper-resistant bait stations", "Sanitation advice included"],                                                    special: ["Humane and effective methods", "Safe for families and pets", "Follow-up visits included", "Guaranteed results"] },
+    outdoor:         { title: "Outdoor Pest Control",       intro: "Reclaim your outdoor spaces from mosquitoes, ticks, and other pests. Perfect for families who want to enjoy their yard safely.",                                       details: ["Mosquito barrier spray treatments", "Tick and flea control for entire yard", "Lawn pest control", "Fire ant mound treatments", "Garden pest control"],                                                                    special: ["Reduces mosquito population by up to 90%", "Protection lasts 3-4 weeks per treatment", "Safe for children and pets once dry", "Natural options available"] },
+    restaurant:      { title: "Restaurant & Food Service",  intro: "Specialized pest management for food service establishments. We help you maintain compliance and protect your reputation.",                                             details: ["Monthly preventive service visits", "Detailed inspection and documentation reports", "Rodent monitoring stations", "Professional fly control systems"],                                                                    special: ["Complete documentation for health inspections", "Food-safe approved treatments only", "24/7 emergency service", "Discreet off-hours service"] },
+    hotel:           { title: "Hotels & Hospitality",       intro: "Discreet, professional pest management designed for the hospitality industry. We protect your guests and your reputation.",                                             details: ["Service in unmarked vehicles", "Flexible scheduling including overnight", "Bed bug prevention and treatment", "Regular guest room inspections", "Common area and kitchen treatments"],                                      special: ["Proactive monitoring to prevent issues", "Rapid response to guest complaints", "Reputation protection is our priority"] },
+    commercial:      { title: "Commercial Buildings",       intro: "Professional pest management for offices, retail, warehouses, and healthcare facilities with minimal disruption.",                                                     details: ["Quarterly or monthly service options", "After-hours treatments available", "Low-odor non-disruptive methods", "Comprehensive service documentation", "Eco-friendly options"],                                              special: ["Minimal disruption to operations", "Regulatory compliance support", "Emergency service available", "Customized programs"] },
+    fumigation:      { title: "Fumigation Services",        intro: "Complete structure fumigation for severe infestations requiring whole-building treatment by licensed professionals.",                                                   details: ["Whole-structure fumigation", "Severe infestation elimination", "Complete pest eradication guarantee", "Professional tenting and sealing"],                                                                                special: ["Licensed and certified specialists", "Strict safety protocols", "Air quality testing before re-entry", "Official clearance certificate"] },
+    preConstruction: { title: "Pre-Construction Treatment", intro: "The most effective termite protection starts before construction. Long-lasting protection for your new building.",                                                     details: ["Soil termiticide application", "Foundation and slab treatments", "Under-slab protection", "Plumbing penetration treatments", "Post-construction perimeter barriers"],                                                      special: ["More cost-effective than post-construction treatment", "Official treatment certification", "Coordination with builders"] },
+    preventive:      { title: "Preventive Maintenance",     intro: "Prevention is always better than treatment. Our program stops pest problems before they start.",                                                                       details: ["Quarterly property inspections", "Exterior perimeter barrier treatments", "Entry point identification", "Moisture problem advice", "Seasonal prevention strategies"],                                                      special: ["Early detection of potential problems", "Lower costs than reactive treatment", "Year-round peace of mind", "Priority emergency service for members"] }
+  };
+
+  function openModal(serviceKey) {
+    const service = serviceData[serviceKey];
+    if (!service) return;
+    document.getElementById('modalTitle').textContent = service.title;
+    document.getElementById('modalIntro').textContent = service.intro;
+    document.getElementById('modalDetails').innerHTML = service.details.map(item => `<div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#1E7A3A] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span class="text-[#1E7A3A]">${item}</span></div>`).join('');
+    document.getElementById('modalSpecial').innerHTML = service.special.map(item => `<div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#1E7A3A] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><span class="text-[#0F4D23] font-medium">${item}</span></div>`).join('');
+    document.getElementById('modalWhatsApp').href = waUrls[serviceKey];
+    document.getElementById('serviceModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('serviceModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });

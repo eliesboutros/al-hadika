@@ -1,0 +1,61 @@
+div class="py-16 bg-white"
+  div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
+    div class="text-center mb-12"
+      h2 class="text-3xl font-bold text-[#0F4D23] mb-4" Frequently Asked Questions
+      p class="text-[#1E7A3A]" Quick answers to common questions
+
+    div class="space-y-4"
+      / FAQ Item 1
+      div class="bg-white rounded-lg shadow-md border border-[#CFE8B3] overflow-hidden"
+        button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-[#F5EED3] transition cursor-pointer" onclick="toggleFAQ(this)"
+          span class="font-bold text-[#0F4D23] text-lg" How quickly can you respond to an emergency?
+          svg class="w-6 h-6 text-[#1E7A3A] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+        div class="faq-answer hidden p-6 pt-0 text-[#1E7A3A]"
+          p We offer 24/7 emergency pest control services and can typically respond within 2-4 hours for urgent situations. Our team is always ready to help when you need us most.
+
+      / FAQ Item 2
+      div class="bg-white rounded-lg shadow-md border border-[#CFE8B3] overflow-hidden"
+        button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-[#F5EED3] transition cursor-pointer" onclick="toggleFAQ(this)"
+          span class="font-bold text-[#0F4D23] text-lg" Are your treatments safe for children and pets?
+          svg class="w-6 h-6 text-[#1E7A3A] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+        div class="faq-answer hidden p-6 pt-0 text-[#1E7A3A]"
+          p Yes! We use EPA-approved products and offer eco-friendly treatment options. All our treatments are safe for children and pets once they're dry, which typically takes 2-4 hours.
+
+      / FAQ Item 3
+      div class="bg-white rounded-lg shadow-md border border-[#CFE8B3] overflow-hidden"
+        button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-[#F5EED3] transition cursor-pointer" onclick="toggleFAQ(this)"
+          span class="font-bold text-[#0F4D23] text-lg" Do you offer free inspections?
+          svg class="w-6 h-6 text-[#1E7A3A] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+        div class="faq-answer hidden p-6 pt-0 text-[#1E7A3A]"
+          p Absolutely! We provide free, no-obligation inspections for all residential and commercial properties throughout Lebanon. Our technicians will assess your situation and provide a detailed quote.
+
+      / FAQ Item 4
+      div class="bg-white rounded-lg shadow-md border border-[#CFE8B3] overflow-hidden"
+        button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-[#F5EED3] transition cursor-pointer" onclick="toggleFAQ(this)"
+          span class="font-bold text-[#0F4D23] text-lg" What areas do you service?
+          svg class="w-6 h-6 text-[#1E7A3A] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+        div class="faq-answer hidden p-6 pt-0 text-[#1E7A3A]"
+          p We are based in Batroun but proudly serve all of Lebanon, including North Lebanon, Mount Lebanon, Beirut, and surrounding areas. Contact us to confirm service availability in your specific location.
+
+      / FAQ Item 5
+      div class="bg-white rounded-lg shadow-md border border-[#CFE8B3] overflow-hidden"
+        button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-[#F5EED3] transition cursor-pointer" onclick="toggleFAQ(this)"
+          span class="font-bold text-[#0F4D23] text-lg" How long does a typical treatment take?
+          svg class="w-6 h-6 text-[#1E7A3A] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+        div class="faq-answer hidden p-6 pt-0 text-[#1E7A3A]"
+          p Treatment time varies depending on the service. General pest control typically takes 30-60 minutes, while more intensive treatments like fumigation or termite control may take several hours. We'll provide an estimated timeline during your inspection.
+
+javascript:
+  // FAQ Toggle Function
+  function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('svg');
+    
+    answer.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+  }

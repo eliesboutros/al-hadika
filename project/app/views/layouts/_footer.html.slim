@@ -1,0 +1,79 @@
+footer class="bg-[#0F4D23] text-white mt-20"
+  div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
+    div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 items-start"
+
+      / Company Info - wider column
+      div class="lg:col-span-3 text-center sm:text-left"
+        div class="flex items-center justify-center sm:justify-start gap-3 mb-6"
+          = image_tag "logo.png", alt: "Al-Hadika Logo", class: "w-16 h-16 object-contain"
+          div class="flex flex-col items-center"
+            h3 class="text-2xl font-serif font-bold text-[#9BBF78] tracking-wide" style="font-family: 'Playfair Display', 'Georgia', serif;" Al-Hadika
+            span class="text-xl font-serif font-bold text-[#CFE8B3] -mt-1" style="font-family: 'Noto Naskh Arabic', 'Traditional Arabic', 'Arabic Typesetting', serif;" dir="rtl" الحديقة
+        p class="text-[#CFE8B3] leading-relaxed text-base mb-3"
+          | We eliminate what
+          span class="italic font-semibold"  bugs
+          |  you.
+
+      / Quick Links
+      div class="lg:col-span-2 text-center sm:text-left"
+        h4 class="text-xl font-semibold mb-6 text-[#9BBF78]" Quick Links
+        ul class="space-y-3 text-base"
+          li= link_to "Home", root_path, class: "text-[#CFE8B3] hover:text-white hover:underline transition duration-200"
+          li= link_to "Services", services_path, class: "text-[#CFE8B3] hover:text-white hover:underline transition duration-200"
+          li= link_to "About Us", about_path, class: "text-[#CFE8B3] hover:text-white hover:underline transition duration-200"
+          li= link_to "Reviews", reviews_path, class: "text-[#CFE8B3] hover:text-white hover:underline transition duration-200"
+          li= link_to "Contact", contact_path, class: "text-[#CFE8B3] hover:text-white hover:underline transition duration-200"
+
+      / Why Choose Us
+      div class="lg:col-span-3 text-center sm:text-left"
+        h4 class="text-xl font-semibold mb-6 text-[#9BBF78]" Why Choose Us
+        ul class="space-y-4 text-base"
+          li class="flex items-start justify-center sm:justify-start gap-3"
+            svg class="w-5 h-5 text-[#9BBF78] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+            span class="text-[#CFE8B3]" Family-run since 1986
+          li class="flex items-start justify-center sm:justify-start gap-3"
+            svg class="w-5 h-5 text-[#9BBF78] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+            span class="text-[#CFE8B3]" 100% satisfaction guaranteed
+          li class="flex items-start justify-center sm:justify-start gap-3"
+            svg class="w-5 h-5 text-[#9BBF78] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+            span class="text-[#CFE8B3]" Safe & eco-friendly treatments
+          li class="flex items-start justify-center sm:justify-start gap-3"
+            svg class="w-5 h-5 text-[#9BBF78] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+            span class="text-[#CFE8B3]" 24/7 emergency service
+          li class="flex items-start justify-center sm:justify-start gap-3"
+            svg class="w-5 h-5 text-[#9BBF78] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+            span class="text-[#CFE8B3]" Serving all of Lebanon
+
+      / Contact
+      div class="lg:col-span-4 text-center sm:text-left"
+        h4 class="text-xl font-semibold mb-6 text-[#9BBF78]" Contact Us
+        ul class="space-y-3 text-base"
+          li
+            a href="tel:+96179365375" class="text-[#CFE8B3] hover:text-white transition flex items-center justify-center sm:justify-start gap-2"
+              svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+              span +961 79 365 375
+          li
+            a href="mailto:support@al-hadika.com" class="text-[#CFE8B3] hover:text-white transition flex items-center justify-center sm:justify-start gap-2"
+              svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+              span support@al-hadika.com
+          li class="text-[#CFE8B3] flex items-center justify-center sm:justify-start gap-2"
+            svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"
+            span Batroun, Lebanon
+          li class="pt-3 flex justify-center sm:justify-start"
+            = whatsapp_button("WhatsApp Us", :general, "inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg hover:bg-[#128C7E] transition duration-200 shadow-lg font-semibold")
+
+    div class="border-t border-[#1E7A3A] mt-12 pt-8 text-center text-[#CFE8B3]"
+      p class="text-base"
+        | &copy;
+        = Time.current.year
+        |  Al-Hadika Pest Control & Garden Services. All rights reserved.
+EOF

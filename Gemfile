@@ -67,3 +67,4 @@ gem "letter_opener", group: :development
 
 
 gem 'slim-rails'
+ruby "4.0.2"
