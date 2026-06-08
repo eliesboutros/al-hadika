@@ -1,6 +1,6 @@
 module WhatsappHelper
-  WHATSAPP_NUMBER = '96179365375'
-  
+  WHATSAPP_NUMBER = "96179365375"
+
   MESSAGES = {
     general: "Hello, I would like to schedule a free inspection.",
     general_pest: "Hi! I am interested in learning more about your General Pest Control service. I would love to discuss the options available and possibly schedule a free inspection at a time that works for me. Thank you!",
