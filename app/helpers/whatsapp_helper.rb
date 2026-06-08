@@ -2,24 +2,26 @@ module WhatsappHelper
   WHATSAPP_NUMBER = '96179365375'
   
   MESSAGES = {
-    general: "Hello, I would like to schedule a free inspection.",
-    general_pest: "Hi! I am interested in learning more about your General Pest Control service. I would love to discuss the options available and possibly schedule a free inspection at a time that works for me. Thank you!",
-    termite: "Hello! I would like to learn more about your termite control services. Could we discuss the different treatment options you offer? I am also interested in scheduling a free inspection when you have availability. Thanks!",
-    bed_bug: "Hi there! I would like to discuss your bed bug treatment services. Could you share information about your treatment methods and how the process works? I would appreciate learning about the next steps. Thank you!",
-    rodent: "Hello! I would like to learn more about your rodent control services. Could you tell me about your approach and what to expect? I would also like to schedule an inspection when convenient. Thank you!",
-    outdoor: "Hi! I am interested in making my outdoor space more enjoyable with your pest control services. Could you share details about the treatment options and how often they are needed? I would love to learn more. Thanks!",
-    restaurant: "Hello! I am looking for professional pest control services for my restaurant/food service business. I would like to discuss your commercial packages and how you work with food establishments. Could we schedule a time to chat? Thank you!",
-    hotel: "Hi! I am interested in pest control services for my hospitality property. I would love to learn about your experience working with hotels and your approach to discreet service. Could we arrange a conversation? Thanks!",
-    commercial: "Hello! I am looking for commercial pest control services for my business facility. I would like to discuss service options that would work with our schedule and operations. Could we connect? Thank you!",
-    fumigation: "Hi! I would like to learn more about your fumigation services. Could you explain the process, timeline, and what to expect? I am interested in understanding all the details. Thank you!",
-    pre_construction: "Hello! I am planning new construction and would like to learn about your pre-construction termite treatment services. Could you share information about the process and timing? I would appreciate your guidance. Thanks!",
-    preventive: "Hi! I am interested in your Preventive Maintenance program to keep my property pest-free throughout the year. Could you share details about how the program works and what is included? I would love to learn more. Thank you!",
-    protection_plan: "Hello! I am interested in learning about your ongoing protection plans. Could you provide information about the different options available and what each includes? Thank you!"
+    general:          { keyword: "INSPECT",      text: "Hello, I would like to schedule a free inspection." },
+    general_pest:     { keyword: "PEST",         text: "Hi! I am interested in learning more about your General Pest Control service. I would love to discuss the options available and possibly schedule a free inspection. Thank you!" },
+    termite:          { keyword: "TERMITE",      text: "Hello! I would like to learn more about your termite control services. Could we discuss the different treatment options you offer? I am also interested in scheduling a free inspection. Thanks!" },
+    bed_bug:          { keyword: "BEDBUG",       text: "Hi there! I would like to discuss your bed bug treatment services. Could you share information about your treatment methods? Thank you!" },
+    cockroach:        { keyword: "COCKROACH",    text: "Hi! I would like to learn more about your cockroach control services. Could you share information about your treatment methods and what to expect? I would love to schedule a free inspection. Thank you!" },
+    rodent:           { keyword: "RODENT",       text: "Hello! I would like to learn more about your rodent control services. Could you tell me about your approach? Thank you!" },
+    outdoor:          { keyword: "OUTDOOR",      text: "Hi! I am interested in making my outdoor space pest-free. Could you share details about the treatment options? Thanks!" },
+    restaurant:       { keyword: "RESTAURANT",   text: "Hello! I am looking for pest control services for my restaurant. I would like to discuss your commercial packages. Thank you!" },
+    hotel:            { keyword: "HOTEL",        text: "Hi! I am interested in pest control services for my hotel. I would love to learn about your discreet service approach. Thanks!" },
+    commercial:       { keyword: "COMMERCIAL",   text: "Hello! I am looking for commercial pest control for my business. Could we discuss service options? Thank you!" },
+    fumigation:       { keyword: "FUMIGATION",   text: "Hi! I would like to learn more about your fumigation services. Could you explain the process and timeline? Thank you!" },
+    pre_construction: { keyword: "PRECONSTRUCT", text: "Hello! I am planning new construction and would like to learn about your pre-construction termite treatment. Thanks!" },
+    preventive:       { keyword: "PREVENTIVE",   text: "Hi! I am interested in your Preventive Maintenance program. Could you share details about how it works? Thank you!" },
+    protection_plan:  { keyword: "PROTECT",      text: "Hello! I am interested in your ongoing protection plans. Could you provide information about the options available? Thank you!" }
   }.freeze
 
   def whatsapp_link(message_type = :general)
-    message = MESSAGES[message_type] || MESSAGES[:general]
-    "https://wa.me/#{WHATSAPP_NUMBER}?text=#{CGI.escape(message)}"
+    data = MESSAGES[message_type] || MESSAGES[:general]
+    full_message = "#{data[:keyword]} - #{data[:text]}"
+    "https://wa.me/#{WHATSAPP_NUMBER}?text=#{CGI.escape(full_message)}"
   end
 
   def whatsapp_button(text, message_type = :general, css_class = "")
@@ -36,6 +38,7 @@ module WhatsappHelper
   end
 
   def whatsapp_message_for(message_type)
-    MESSAGES[message_type] || MESSAGES[:general]
+    data = MESSAGES[message_type] || MESSAGES[:general]
+    "#{data[:keyword]} - #{data[:text]}"
   end
 end
