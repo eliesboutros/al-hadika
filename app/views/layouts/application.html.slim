@@ -1,8 +1,8 @@
 doctype html
 html
   head
-    title Al-Hadika Pest Control
-    meta name="viewport" content="width=device-width,initial-scale=1"
+    title = content_for?(:page_title) ? "#{yield(:page_title)} | Al-Hadika Pest Control" : "Al-Hadika Pest Control | Expert Pest Control in Lebanon"
+    meta name="description" content=(content_for?(:meta_description) ? yield(:meta_description) : "Al-Hadika Pest Control: professional, eco-friendly pest control across Lebanon. Bed bugs, rodents, termites, roaches and more. Free inspection and 24/7 emergency service.")    meta name="viewport" content="width=device-width,initial-scale=1"
     = csrf_meta_tags
     = csp_meta_tag
     = favicon_link_tag "logo.png"
