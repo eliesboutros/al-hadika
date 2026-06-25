@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.1.3"
 gem "propshaft"
 gem "pg", ">= 1.5" # ← changed from sqlite3
 gem "puma", ">= 5.0"
@@ -38,4 +38,4 @@ end
 
 gem "slim-rails"
 
-ruby "3.4.4"
+ruby "4.0.5"
